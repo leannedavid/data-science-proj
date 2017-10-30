@@ -1,4 +1,7 @@
 import json
+import pandas as pd
 f = open("train.json")
 json_parsed = json.load(f)
-print(json_parsed[0]["ingredients"])
+pd_json = read_json(json_parsed)
+
+print(pd_json)
